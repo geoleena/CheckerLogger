@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://checkerlogger/skin/skin.css" type="text/css"?>
+<!DOCTYPE checkerlogger SYSTEM "chrome://checkerlogger/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="checkerLogger.js" />
+  
+  <menupopup id="menu_ToolsPopup">
+    <menuitem label="&runcheckerlogger;" key="checker-logger-run-key" oncommand="CheckerLogger.checkerLogger.run(window)"/>
+  </menupopup>
+
+  <keyset>  
+    <key id="checker-logger-run-key" modifiers="accel alt shift" key="L" oncommand="CheckerLogger.checkerLogger.run(window)"/>
+  </keyset>
+  
+  <statusbar id="status-bar">
+    <statusbarpanel id="checker-logger-status-bar-icon" class="statusbarpanel-iconic" src="chrome://checkerlogger/skin/status-bar.png" tooltiptext="&runcheckerlogger;" onclick="CheckerLogger.checkerLogger.run(window)" />
+  </statusbar>
+
+  <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="checker-logger-toolbar-button" label="Checker logger" tooltiptext="&runcheckerlogger;" oncommand="CheckerLogger.checkerLogger.run(window)"/>
+  </toolbarpalette>
+</overlay>
+

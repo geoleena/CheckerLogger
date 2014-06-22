@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>checkerlogger@geoleena</em:id>
+
+		<em:version>1.0</em:version>
+		<em:type>2</em:type>
+		<em:creator>geoleena</em:creator>
+
+                <em:localized>
+                  <Description>
+                    <em:locale>en-US</em:locale>
+		    <em:name>geocache.fi Checker Logger</em:name>
+		    <em:description>
+Saves coordinates submitted to GeoChecker at geocache.fi.
+
+Coordinates are only saved for the current browser session. When you close your brownser, the entries will be deleted. The entries are also deleted if you choose to clear your browsing history. You can save the coordinates to a file and load them from a file if you need to save the entries for the next browser session.
+
+The extension only saves coordinates submitted AFTER the extension was installed. Only the information submitted is saved. In particular NO information is saved about the result of submission: whether the coordinates were right, wrong, hit a hot spot, or if the safety passphrase was wrong.
+
+Also keep in mind the terms of use of the GeoChecker! In particular the checker is meant for checking the solution of a mystery, not for solving the mystery.
+                    </em:description>
+                  </Description>
+                </em:localized>
+
+                <em:localized>
+                  <Description>
+                    <em:locale>fi-FI</em:locale>
+		    <em:name>geocache.fi Checker Logger</em:name>
+		    <em:description>
+Tämä lisäosa tallettaa geocache.fi:n GeoChecker-palveluun lähetetyt koordinaatit.
+
+Koordinaatit tallennetaan vain yhden selainsession ajaksi. Kun suljet selaimen tallennetut koordinaatit poistetaan. Koordinaatit poistetaan myös, kun tyhjennät selaimen välimuistin. Voit tallettaa koordinaatit tiedostoon ja ladata ne tiedostosta, jos haluat tallettaa ne seuraavaa selainsessiota varten.
+
+Lisäosa tallettaa vain koordinaatit, jotka on lähetetty tarkastettavaksi lisäosan asentamisen JÄLKEEN. Lisäosa tallettaa vain lähetetyn informaation. Huomaa erityisesti, että tietoa tarkastamisen lopputuloksesta EI talleteta: Koordinaatit ovat voineet olla oikein, väärin, osua kuumaan pisteeseen tai turvakoodi on voinut olla väärin.
+                        
+Muista myös GeoCheckerin käyttöehdot! GeoChecker on tarkoitettu ratkaisun tarkistamiseen, ei mysteerin ratkaisemiseen.
+                    </em:description>
+                  </Description>
+                </em:localized>
+		<em:homepageURL>https://github.com/geoleena/CheckerLogger/</em:homepageURL>
+		<em:targetApplication>
+
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>20.0</em:minVersion>
+				<em:maxVersion>30.0</em:maxVersion>
+
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>

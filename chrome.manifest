@@ -1,0 +1,9 @@
+content     checkerlogger    chrome/content/
+content     checkerlogger    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://checkerlogger/content/browser.xul
+
+locale	checkerlogger	fi-FI	locale/fi-FI/
+locale	checkerlogger	en-US	locale/en-US/
+
+skin	checkerlogger	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://checkerlogger/skin/skin.css

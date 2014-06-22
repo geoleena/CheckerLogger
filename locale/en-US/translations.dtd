@@ -1,0 +1,13 @@
+<!ENTITY runcheckerlogger "Checker Logger">
+<!ENTITY gccode "GC code">
+<!ENTITY import "Load from file">
+<!ENTITY showall "Show all">
+<!ENTITY deleteall "Delete all">
+<!ENTITY exportall "Save all to file">
+<!ENTITY show "Show">
+<!ENTITY delete "Delete">
+<!ENTITY export "Save to file">
+<!ENTITY latitude "Latitude">
+<!ENTITY longitude "Longitude">
+<!ENTITY timestamp "Timestamp">
+<!ENTITY browsetitle "Browse GeoChecker entries">

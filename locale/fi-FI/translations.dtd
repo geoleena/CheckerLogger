@@ -1,0 +1,13 @@
+<!ENTITY runcheckerlogger "Checker Logger">
+<!ENTITY gccode "GC koodi">
+<!ENTITY import "Lataa tiedostosta">
+<!ENTITY showall "Näytä kaikki">
+<!ENTITY deleteall "Poista kaikki">
+<!ENTITY exportall "Talleta kaikki tiedosotoon">
+<!ENTITY show "Näytä">
+<!ENTITY delete "Poista">
+<!ENTITY export "Talleta tiedostoon">
+<!ENTITY latitude "Leveysaste">
+<!ENTITY longitude "Pituusaste">
+<!ENTITY timestamp "Aikaleima">
+<!ENTITY browsetitle "Selaa GeoChecker tietoja">

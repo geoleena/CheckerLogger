@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE checkerlogger SYSTEM "chrome://checkerlogger/locale/translations.dtd">
+
+<window
+ id="dbbrowser-window"
+ title="&browsetitle;"
+ orient="vertical"
+ xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="checkerLogger.js" />
+
+    <hbox>
+      <button
+      id="import"
+      label="&import;"
+      oncommand="CheckerLogger.checkerLogger.importFromFile(window)"/>
+    </hbox>
+
+    <hbox>
+        <button
+        id="select-all"
+        label="&showall;"
+        oncommand="CheckerLogger.checkerLogger.selectAll(window)"/>
+    
+        <button
+        id="delete-all"
+        label="&deleteall;"
+        oncommand="CheckerLogger.checkerLogger.deleteAll(window);"/>
+        <button
+        id="export-all"
+        label="&exportall;"
+        oncommand="CheckerLogger.checkerLogger.exportAll(window)"/>
+
+    </hbox>
+
+    <hbox>
+        <label
+        value="&gccode;"
+        control="gccode"/>
+
+        <textbox
+        id="gccode"
+        maxlength="8"/>
+
+        <button
+        id="select"
+        label="&show;"
+        oncommand="CheckerLogger.checkerLogger.selectWP(window)"/>
+
+        <button
+        id="delete"
+        label="&delete;"
+        oncommand="CheckerLogger.checkerLogger.deleteWP(window)"/>
+        <button
+        id="export"
+        label="&export;"
+        oncommand="CheckerLogger.checkerLogger.exportWP(window)"/>
+    </hbox>
+    
+    <listbox
+    id="output" width="640" height="450">
+    <listhead>
+    <listheader label="&gccode;" width="100"/>
+    <listheader label="&latitude;" width="120"/>
+    <listheader label="&longitude;" width="120"/>
+    <listheader label="&timestamp;" width="300"/>
+    </listhead>
+
+    </listbox>
+
+</window>

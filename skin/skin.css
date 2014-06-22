@@ -1,0 +1,12 @@
+#checker-logger-toolbar-button {
+	list-style-image: URL("chrome://checkerlogger/skin/toolbar-large.png");
+}
+
+#checker-logger-status-bar-icon {
+	width: 64px;
+	margin: 0 0px;
+}
+
+.checker-logger-selected {
+	outline: 2px solid red !important;
+}
