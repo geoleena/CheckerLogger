@@ -90,16 +90,16 @@ CheckerLogger.httpRequestObserver =
 
                         var ns = this.getParameterByName("ns", poststr);
                         var ew = this.getParameterByName("ew", poststr);
-                        var lat1 = parseInt(this.getParameterByName("cachelat1", poststr));
-                        var lat2 = parseInt(this.getParameterByName("cachelat2", poststr));
-                        var lat3 = parseInt(this.getParameterByName("cachelat3", poststr));
-                        var lon1 = parseInt(this.getParameterByName("cachelon1", poststr));
-                        var lon2 = parseInt(this.getParameterByName("cachelon2", poststr));
-                        var lon3 = parseInt(this.getParameterByName("cachelon3", poststr));
+                        var lat1 = parseInt(this.getParameterByName("cachelat1", poststr),10);
+                        var lat2 = parseInt(this.getParameterByName("cachelat2", poststr),10);
+                        var lat3 = parseInt(this.getParameterByName("cachelat3", poststr),10);
+                        var lon1 = parseInt(this.getParameterByName("cachelon1", poststr),10);
+                        var lon2 = parseInt(this.getParameterByName("cachelon2", poststr),10);
+                        var lon3 = parseInt(this.getParameterByName("cachelon3", poststr),10);
                         var wp = this.getParameterByName("wp", poststr);
 
-                        if (ns!="" && ew!="" && lat1!="" && lat2!="" && lat3!="" && 
-                            lon1!="" && lon2!="" && lon3!="" && wp!="") {
+                        if (!(ns=="" || ew=="" || isNaN(lat1) || isNaN(lat2) || isNaN(lat3) || 
+                              isNaN(lon1) || isNaN(lon2) || isNaN(lon3) || wp=="")) {
 
  	                    var entry = {
                                 wp:wp,

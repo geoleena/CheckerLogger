@@ -36,11 +36,16 @@ from the Tools menu.
 
 4. Tested platforms
 
-Ubuntu 12.04.4 and Firefox 30.0
+Ubuntu 12.04.4 and Firefox 31.0
 
 5. Contact
 
 Leena Salmela <geoleena2@gmail.com>
+
+6. Change log
+
+Version 1.0.1: Fixed a bug that caused some coordinates containing all
+zero entries not to be saved.
 
 ----
 
@@ -79,8 +84,13 @@ selaimen Työkalut valikosta.
 
 4. Testatut alustat
 
-Ubuntu 12.04.4 ja Firefox 30.0
+Ubuntu 12.04.4 ja Firefox 31.0
 
 5. Yhteystiedot
 
 Leena Salmela <geoleena2@gmail.com>
+
+6. Muutokset
+
+Versio 1.0.1: Korjattu virhe, joka esti joidenkin nollia sisältävien
+koordinaattien tallentamisen.
